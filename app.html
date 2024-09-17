@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book appointment</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <a href="#" class="logo">Medcare</a>
+            <div class="search-bar">
+                <input type="text" placeholder="search">
+                <button>Search</button>
+            </div>
+            <div class="header-right">
+                <a href="#">List your practice</a>
+            </div>
+        </div>
+
+            <div class="content">
+                <div class="results-container">
+                    <div class="search-options">
+                        <select>
+                            <option value="stomach pain">stomach pain</option>
+                            <option value="fever">fever</option>
+                            <option value="heart">heart problem</option>
+                            <option value="skin">skin problem</option>
+                            <option value="other">other</option>
+                        </select>
+                        <select>
+                            <option value="any gender">Any gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                        <select>
+                            <option value="any day">Any day</option>
+                            <option value="today">Today</option>
+                            <option value="next 3 days">Next 3 days</option>
+                            <option value="agter week">After week</option>
+                        </select>
+                        <button>Sort by: default order</button>
+                    </div>
+
+                    <hr>
+
+                    <!--Doctor info 1 -->
+                    <div class="results">
+                        <div class="result">
+                            <input type="checkbox" id="in-network" checked>
+                            <label for="in-network">In-Network</label>
+                            <div class="doctor-info">
+                                <img src="public\n.png" alt="XYZ">
+                                <div>
+                                    <h3>Dr. XYZ, MD</h3>
+                                    <p>Heart Specilist</p>
+                                    <p>"More than 15 years of experience,best in its field..."</p>
+                                    <p>101 Main Street, Civil Line, Prayagraj </p>
+                                    <p>Available within 2 hours</p>
+                                </div>
+                            </div>
+                            <div class="schedule">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>8:45 am</td>
+                                            <td>8:45 am</td>
+                                            <td>8:45 am</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9:30 am</td>
+                                            <td>10:15 am</td>
+                                            <td>10:30 am</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>1:00 pm</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button  value="open" onclick="done()" 
+                            style="background-color: #007bff; color: white; 
+                            border-radius: 0 5px 5px 0;cursor: pointer;"> Book Appointment</button>
+                        </div>
+                       
+                        <!--Doctor info 2 -->
+                        <div class="result">
+                            <div class="doctor-info">
+                                <img src="public\f.png" alt="ABC">
+                                <div>
+                                    <h3>Dr. ABC, MD</h3>
+                                    <p>ENT specilist</p>
+                                    <p>"Best ENT doctor"</p>
+                                    <p>850 Central, Civil Lines, Prayagraj</p>
+                                    <p>Available within 15 minutes</p>
+                                </div>
+                            </div>
+                            <div class="schedule">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>8:30 am</td>
+                                            <td>9:00 am</td>
+                                            <td>10:00 am</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2:00 pm</td>
+                                            <td>12:30 pm</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>1:45 pm</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button  value="open" onclick="done()" 
+                            style="background-color: #007bff; color: white; 
+                            border-radius: 0 5px 5px 0;cursor: pointer;"> Book Appointment</button>
+                        </div>
+                        <!--End dr info-->
+                    </div>
+
+                    <div class="result">
+                        <div class="doctor-info">
+                            <img src="public\g.avif" alt="ABC">
+                            <div>
+                                <h3>Dr. PQR, MD</h3>
+                                <p>Bone specilist</p>
+                                <p>"More than 10 years of experience,best in its field..."</p>
+                                <p>850 Central, Civil Lines, Prayagraj</p>
+                                <p>Available within 30 minutes</p>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>9:30 am</td>
+                                        <td>12:00 am</td>
+                                        <td>10:00 am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2:00 pm</td>
+                                        <td>12:30 pm</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1:45 pm</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button  value="open" onclick="done()" 
+                        style="background-color: #007bff; color: white; 
+                        border-radius: 0 5px 5px 0;cursor: pointer;"> Book Appointment</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
